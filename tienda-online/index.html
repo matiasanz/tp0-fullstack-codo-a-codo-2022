@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" type="image/x-icon" href="/assets/favicon.ico">
+        <link rel="stylesheet" href="./styles.css">rel="styles"</link>
+        <title>Tienda Online</title>
+    </head>
+    <body>
+        <header>
+            <nav class="top-nav">
+                <a href="/" class="link-inicio">
+                    <img src="/assets/logo/logo2.jpeg" alt="Steiner Coffee">
+                    Inicio
+                </a>
+                <a href="/tienda-online">Nuestros Productos</a>
+                <a href="/sucursales">Donde Encontrarnos</a>
+                <a href="/contacto">Contacto</a>
+            </nav>
+        </header>
+        <main>
+            <section id="cabezal">
+                <h1>Nuestros Productos</h1>
+            </section>
+
+            <section id="sidebar">
+                <form>
+                    <label for="filtro_nombre">Buscar</label>
+                    <input id="filtro_nombre" type="search" placeholder="Nombre Producto..."/></form>
+                    <br>
+                    <label for="filtro_categoria">Categoría</label>
+                    <select id="filtro_categoria">
+                        <option>Todas</option>
+                        <option>Café</option>
+                        <option>Cafeteras</option>
+                        <option>Merchandising</option>
+                    </select>
+                </form>
+            </section>
+
+            <section id="content">
+                <div id="contenedor-productos">
+                    <article id="producto1">
+                        <img class="producto--img" src="/assets/fotos/Paquete.jpeg">
+                        <h3>Paquete #1</h3>
+                    </article>    
+                </div>
+            </section>
+        </main>
+        <footer>@Copyright 2022</footer>
+
+        <script>
+            let cantidadProductos=20
+
+            for(let i=2; i<=cantidadProductos; i++){
+                const img = document.createElement('img')
+                    img.setAttribute('src', "../assets/fotos/Paquete.jpeg")
+                    img.setAttribute('class', 'producto--img')
+                const titulo = document.createElement('h3')
+                    titulo.innerText = "Paquete #"+i
+
+                const nuevoProd = document.createElement('article')
+                    nuevoProd.appendChild(img)  
+                    nuevoProd.appendChild(titulo)
+
+                document.getElementById('contenedor-productos').appendChild(nuevoProd)
+            }
+        </script>
+
+    </body>
+
+</html>

@@ -1,0 +1,79 @@
+/****************** Barra superior *********************/
+    :root{
+        --alturaTopNav: 2em;
+    }
+
+    header{
+        height: var(--alturaTopNav);
+    }
+
+    .top-nav{
+        position: fixed;
+        top: 0;
+        right: 0;
+        height: var(--alturaTopNav);
+        background-color: #E99F24;
+        width: 100%;
+
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .top-nav img{
+        height: 2em;
+    }
+
+    .top-nav a:hover{
+        background-color: gold;
+    }
+
+    .link-inicio{
+        display: flex;
+        align-items: center;
+    }
+/********************** Footer *******************/
+    footer{
+        text-align: center;
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+    }
+
+/*************** Contenido Principal *************/
+
+    main{
+        display: grid;
+        
+        
+        grid-template-columns: 1fr 3fr;
+        grid-template-areas:
+            "header header"
+            "sidebar content"
+    }
+
+    #cabezal{
+        grid-area: header;
+        text-align: center;
+    }
+
+    #sidebar{
+        grid-area: sidebar;
+    }
+
+    #content{
+        grid-area: content;
+    }
+
+/************************* Grilla Productos **********************/
+
+    .producto--img{
+        height: 100px;            
+    }        
+
+
+    #contenedor-productos{
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(5em, 10em));
+    }
