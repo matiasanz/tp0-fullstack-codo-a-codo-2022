@@ -1,13 +1,13 @@
 # TP N°01 Codo a Codo 2022 2C
 
-## ✒️ Integrantes:  
+## ✒️ Integrantes:
 * Anzorandía, Matías
 * Gutiérrez, Julieta
-* Chachahua, José
+* Chachagua, José
 
-## 📌 Enunciado: 
+## 📌 Enunciado:
   >  Desarrollar un sitio web responsive compuesto por 3 páginas, del tema que elijas y te interese. Se busca la creación de una página cuya estructura esté perfectamente distribuida en el espacio. Atendiendo también cuestiones de diseño y estética y que sean visualmente prolijos y atractivos, con secciones claras y de fácil lectura de forma tal de poder incluirlo en tu portfolio profesional. Se espera que la navegación sea intuitiva y dinámica, con efectos de interacción. Todo esto será llevado adelante aplicando las mejores prácticas en desarrollo web, utilizando HTML, CSS y Javascript para que puedas dominar todas estas tecnologías.
-    
+
 ## 📋 Tareas Semanales
   - ### Semana #1
     - [x] Formar un grupo de 3 personas.
