@@ -1,7 +1,8 @@
 /************************* Grilla Productos **********************/
 
 .producto--img{
-    height: 100px;            
+    height: 100px;
+    border-radius: 5em;            
 }        
 
 

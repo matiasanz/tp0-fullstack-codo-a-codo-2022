@@ -1,19 +1,12 @@
 /****************** Barra superior *********************/
     :root{
-        --alturaTopNav: 2em;
-    }
-
-    header{
-        height: var(--alturaTopNav);
+        --alturaTopNav:2em;
     }
 
     .top-nav{
-        position: fixed;
-        top: 0;
-        right: 0;
         height: var(--alturaTopNav);
         background-color: #E99F24;
-        width: 100%;
+        width: auto;
 
         display: flex;
         justify-content: space-around;
@@ -34,29 +27,41 @@
     }
 /********************** Footer *******************/
     footer{
+        grid-area: footer;
         text-align: center;
-        position: fixed;
-        bottom: 0;
-        left: 0;
-        width: 100%;
+        width: auto;
+        color: whitesmoke;
+        font-style: italic;
+        background-color: black;
     }
 
 /*************** Contenido Principal *************/
+    
 
-    main{
+    body{
+        margin: 0;
         display: grid;
-        
-        
-        grid-template-columns: 1fr 3fr;
+        grid-template-rows: fit-content auto fit-content;
         grid-template-areas:
-            "header header"
-            "sidebar content"
+            "header"
+            "content"
+            "footer"
+        ;
     }
 
-    .cabezal{
+    main{
+        margin: 0 1em;
+        display: grid;
+        grid-template-columns: 1fr 3fr;
+        grid-template-areas:
+            "sidebar content"
+        ;
+    }
+    .header{
         grid-area: header;
         text-align: center;
     }
+
 
     .sidebar{
         grid-area: sidebar;
@@ -64,6 +69,8 @@
 
     .content{
         grid-area: content;
+        height: calc(100vh - 8.1em);
+        overflow: auto;
     }
 
  
