@@ -53,27 +53,17 @@
             "sidebar content"
     }
 
-    #cabezal{
+    .cabezal{
         grid-area: header;
         text-align: center;
     }
 
-    #sidebar{
+    .sidebar{
         grid-area: sidebar;
     }
 
-    #content{
+    .content{
         grid-area: content;
     }
 
-/************************* Grilla Productos **********************/
-
-    .producto--img{
-        height: 100px;            
-    }        
-
-
-    #contenedor-productos{
-        display: grid;
-        grid-template-columns: repeat(auto-fill, minmax(5em, 10em));
-    }
+ 

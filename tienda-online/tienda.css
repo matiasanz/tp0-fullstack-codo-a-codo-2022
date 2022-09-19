@@ -1,0 +1,11 @@
+/************************* Grilla Productos **********************/
+
+.producto--img{
+    height: 100px;            
+}        
+
+
+#contenedor-productos{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(5em, 10em));
+}
