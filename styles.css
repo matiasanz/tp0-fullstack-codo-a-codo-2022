@@ -66,6 +66,8 @@
         grid-template-areas:
             "sidebar content"
         ;
+        margin-right: 0; /*Esto esta para que la scroll bar quede pegada al borde derecho.
+        Ante cualquier problema relacionado, sacar*/
     }
     .header{
         grid-area: header;
