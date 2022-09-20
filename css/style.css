@@ -19,22 +19,48 @@ main{
 }
 header, footer{
     min-height: 100px;
+    overflow: auto;
 }
 
 main > div.contenido-ppal{
     float: left;
-    width: 65%;
+    width: 100%;
 }
 
 .header-menubar{
-    margin: 0.5rem 1rem 0.5rem 1rem;
+    /*margin: 0.5rem 1rem 0.5rem 1rem;*/
+    /*position: relative;
+    top: -50px;
+    left: 300px;*/
+
 }
 .header-menubar ul{
     list-style: none;
 }
 .header-menubar li{
-    float: left;
+    float: right;
     font-weight: 600;
     text-align: center;
+    color: #ffffff;
+    margin-right: 1.5em;;
+}
+header{
+    padding: 0;
+    background-color: #000000;
+}
 
+header #header-logo{
+    float: left;
+    background-image: url(../assets/logo/logo1.png);
+    height: 110px;
+    width: 257px;
+}
+
+.coffee-header{
+    padding: 10px;
+    background-color: #000000;
+    background-image: url(../assets/fotos/granosCafe.jpeg);
+    height: 200px;
+    width: 100%;
+    /*opacity: 0.9;*/
 }
