@@ -24,9 +24,15 @@
 
 /************************* Grilla Productos **********************/
 
+.producto{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 .producto--img{
-    height: 100px;
-    border-radius: 5em;            
+    height: 6.25em;
+    border-radius: 100%;            
 }        
 
 

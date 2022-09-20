@@ -42,7 +42,7 @@
     
             <section class="content">
                 <div id="contenedor-productos" class="contenedor-productos">
-                    <article id="producto1">
+                    <article id="producto1" class="producto">
                         <img class="producto--img" src="/assets/fotos/Paquete.jpeg">
                         <h3>Paquete #1</h3>
                     </article>    
@@ -68,6 +68,7 @@
                 const nuevoProd = document.createElement('article')
                     nuevoProd.appendChild(img)  
                     nuevoProd.appendChild(titulo)
+                    nuevoProd.setAttribute('class', 'producto')
 
                 document.getElementById('contenedor-productos').appendChild(nuevoProd)
             }
