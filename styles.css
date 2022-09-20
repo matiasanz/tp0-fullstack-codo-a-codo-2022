@@ -7,11 +7,14 @@
 /****************** Barra superior *********************/
     :root{
         --alturaTopNav:2em;
+        --color-primario: #E99F24;
+        --color-secundario: black;
+        --color-terciario: #405D51;
     }
 
     .top-nav{
         height: var(--alturaTopNav);
-        background-color: #E99F24;
+        background-color: var(--color-primario);
         width: auto;
 
         display: flex;
@@ -29,7 +32,9 @@
     }
 
     .top-nav a:hover{
-        background-color: gold;
+        color: whitesmoke;
+        background-color: var(--color-terciario);
+        height: 2em;
     }
 
     .link-inicio{
@@ -41,7 +46,7 @@
     footer{
         width: 100%;
         margin-top: 1em;
-        background-color: black;
+        background-color: var(--color-secundario);
         color: whitesmoke;
         font-style: italic;
     }
@@ -82,4 +87,8 @@
         text-align: center;
     }
 
+/***************** Varios ***************/
+    input[type="submit"]{
+        cursor: pointer;
+    }
 
