@@ -6,6 +6,8 @@
 * Gutiérrez, Julieta
 
 ## 📌 Enunciado: 
+  > Desarrollar un sitio web responsive compuesto por 4 páginas, del tema que elijas y te interese. Se busca la creación de una página cuya estructura esté perfectamente distribuida en el espacio. Atendiendo también cuestiones de diseño y estética y que sean visualmente prolijos y atractivos, con secciones claras y de fácil lectura de forma tal de poder incluirlo en tu portfolio profesional. Se espera que la navegación sea intuitiva y dinámica, con efectos de interacción. Todo esto será llevado adelante aplicando las mejores prácticas en desarrollo web, utilizando HTML, CSS y Javascript para que puedas dominar todas estas tecnologías.
+
   >  El proyecto web se desarrollará en grupos de 3 integrantes cada uno (obligatorio). Cada
 grupo deberá designar un representante de forma tal de establecer contacto directo con el
 Docente. Será ese integrante el que recibirá la devolución del proyecto realizada por el
