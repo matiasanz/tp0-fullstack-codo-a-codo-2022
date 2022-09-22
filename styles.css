@@ -1,0 +1,27 @@
+
+/*Font Type*/
+@font-face {
+    font-family: 'gothamblack';
+    src: url('CSS/Gotham/gotham-black-webfont.woff2') format('woff2'),
+         url('./gotham-black-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'gothammedium';
+    src: url('CSS/Gotham/gothammedium-webfont.woff2') format('woff2'),
+         url('./gotham-black-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+/*Applying font type to whole page*/
+* {
+    font-family: 'gothamblack';  
+    background-color: rgb(232,159,35); 
+}
+
+footer {
+    font-family: 'gothammedium';
+    font-size: 12px
+}
