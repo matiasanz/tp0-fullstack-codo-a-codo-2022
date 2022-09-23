@@ -25,35 +25,93 @@
 }
 
 header {
+    /*background-color: rgb(103,111,122);
+    */
+    color :rgb(232,159,35);
+    height: auto;
+    text-align: right;
+    }
+
+.header-text {
+    text-align: center;
+    position: relative;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: black;
+    }
+
+.header-image {
+    background-image: url("./assets/fotos/header-image.jpg");
+    width: 100%;
+    height: auto;
+    }
+    
+/*.header-image {
+    background-image: url("./assets/fotos/header-image.jpg" );
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    background-size: cover;
+    width: 100%;
+    }*/
+    
+h1 {
     font-family: 'gothamblack';
-    font-size: 110% ;
-    background-color: rgb(103,111,122);
+    font-size: 400% ;
+    }
+
+h2 {
+    font-family: 'gothamblack';
+    font-size: 150% ;
 }
+
+p {
+    font-family: 'gothamblack';
+    font-size: 100% ;
+    text-align: center ;
+
+}
+
 footer {
     font-family: 'gothammedium';
-    font-size: 50%;
+    font-size: 100%;
     background-color: rgb(103,111,122);
 }
 
 .container{
     display: inline-grid;
-    grid-template-columns: repeat(3,auto);
+    grid-template-columns: repeat(6,auto);
     /*grid-row-gap: 10px;
     grid-column-gap: 20px;
     */
     width: 100%;
-    height: 100%;
-    grid-template-rows: 100px ;
+    height: auto;
+    /*grid-template-rows: 100% ;
+    */
     justify-content: space-evenly;
     align-content: stretch;
     color: rgb(232,159,35); 
     background-color: black; 
-    font-family: 'gothamblack'; 
+    font-family: 'gothamblack';
+    text-align: center ; 
 }
 
-.caja1{
-    grid-row-start: 1;
-    grid-row-end: 3;
+.tiendaIcono {
+    grid-column-start: 4;
+    grid-column-end: 7; 
+}
+
+.tienda {
+    grid-column-start: 1;
+    grid-column-end: 4;
+    font-size: 250% ;
+    font-family: 'gothambold';
+}
+
+.cafesIcono {
+    grid-column-start: 7;
+    grid-column-end: 11; 
 }
 
 .datos {
@@ -61,7 +119,7 @@ footer {
     grid-template-columns: repeat(3,auto);
     background-color: rgb(103,111,122);
     width: 100% ;
-    height: 100%;
+    height: 100% ;
     font-family: 'gothambold';
     justify-content: space-evenly;
     color: black;
