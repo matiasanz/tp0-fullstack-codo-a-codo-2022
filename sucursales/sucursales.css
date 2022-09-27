@@ -1,0 +1,11 @@
+.sucursales-container{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.sucursal{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
