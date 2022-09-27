@@ -14,9 +14,8 @@
 
     .top-nav{
         height: var(--alturaTopNav);
-        background-color: var(--color-primario);
+        background-image: url("./assets/topnav.jpg");
         width: auto;
-
         display: flex;
         justify-content: space-around;
         align-items: center;
@@ -24,10 +23,12 @@
 
     .top-nav img{
         height: 2em;
+        border-radius: 100%;
+        background-color: rgba(233, 159, 36, 0.15);
     }
 
     .top-nav a{
-        color: black;
+        color: whitesmoke;
         text-decoration: none;
     }
 
@@ -73,7 +74,8 @@
         grid-template-areas:
             "header"
             "content"
-        ;
+            ;
+            background: linear-gradient(rgba(255,255,255,.75), rgba(255,255,255,.5)), url('/assets/tramas/trama.png');
     }
 
     main{

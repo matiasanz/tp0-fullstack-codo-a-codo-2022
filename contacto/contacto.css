@@ -7,6 +7,7 @@ main{
 
 
 .espacio-consultas{
+    background-color: var(--color-primario);
     border: black solid 1px;
     width: fit-content;
     height: fit-content;
