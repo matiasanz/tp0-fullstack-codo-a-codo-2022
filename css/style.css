@@ -13,14 +13,22 @@ body, header, main, footer{
     margin: 0.25rem;
     min-width: 400px;
 }
+
+header{
+    min-height: 50px;
+    overflow: auto;
+}
+
+footer{
+    min-height: 100px;
+    overflow: auto;
+}
+
 main{
     min-height: 200px;
     overflow: auto;
 }
-header, footer{
-    min-height: 100px;
-    overflow: auto;
-}
+
 
 main > div.contenido-ppal{
     float: left;
@@ -51,9 +59,9 @@ header{
 
 header #header-logo{
     float: left;
-    background-image: url(../assets/logo/logo1.png);
-    height: 110px;
-    width: 257px;
+    background-image: url(../assets/logo/logo3_2.png);
+    height: 50px;
+    width: 138px;
 }
 
 .coffee-header{
@@ -63,6 +71,10 @@ header #header-logo{
     height: 200px;
     width: 100%;
     /*opacity: 0.9;*/
+}
+.coffee-header > h1{
+    color: #ffffff;
+    font-family; :
 }
 
 .col-1 {width: 8.33%;}
