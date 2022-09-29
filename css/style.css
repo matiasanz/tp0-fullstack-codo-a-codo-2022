@@ -1,3 +1,28 @@
+/*Font Type*/
+@font-face {
+    font-family: 'gothamblack';
+    src: url('/font/Gotham/gotham-black-webfont.woff2') format('woff2'),
+         url('/font/Gotham/gotham-black-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'gothammedium';
+    src: url('/font/Gotham/gothammedium-webfont.woff2') format('woff2'),
+         url('/font/Gotham/gothammedium-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'gothambold';
+    src: url('/font/Gotham/gotham-bold-webfont.woff') format('woff2'),
+         url('/font/Gotham/gotham-black-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
 * {
     padding: 0;
     box-sizing: border-box;
@@ -74,7 +99,7 @@ header #header-logo{
 }
 .coffee-header > h1{
     color: #ffffff;
-    font-family; :
+    font-family: gothammedium;
 }
 
 .col-1 {width: 8.33%;}
@@ -102,3 +127,4 @@ header #header-logo{
     clear: both;
     display: table;
 }
+
