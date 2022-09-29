@@ -7,7 +7,8 @@ main{
 
 
 .espacio-consultas{
-    background-color: var(--color-primario);
+    background-image: url('../assets/logo/logo1.jpeg');
+    background-repeat: round;
     border: black solid 1px;
     width: fit-content;
     height: fit-content;
@@ -35,6 +36,7 @@ main{
     border-radius: 0.5em;
     color: var(--color-terciario);
     border: var(--color-terciario) 1px solid;
+    background-color: rgba(255,255,255,0.85);
 }
 
 .dato-textarea{
