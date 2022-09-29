@@ -24,6 +24,11 @@
 
 /************************* Grilla Productos **********************/
 
+.contenedor-productos{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(5em, 10em));
+}
+
 .producto{
     display: flex;
     flex-direction: column;
@@ -35,8 +40,13 @@
     border-radius: 100%;            
 }        
 
+.producto--datos{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+}
 
-.contenedor-productos{
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(5em, 10em));
+.producto--datos h3{
+    margin-bottom: 0;
 }

@@ -44,7 +44,10 @@
                 <div id="contenedor-productos" class="contenedor-productos">
                     <article id="producto1" class="producto">
                         <img class="producto--img" src="/assets/fotos/Paquete.jpeg">
-                        <h3>Paquete #1</h3>
+                        <div class="producto--datos">
+                            <h3>Paquete #1</h3>
+                            <p>$300,00</p>
+                        </div>
                     </article>    
                 </div>
             </section>
@@ -56,22 +59,32 @@
         </footer>
 
         <script>
-            let cantidadProductos=40
-
-            for(let i=2; i<=cantidadProductos; i++){
-                const img = document.createElement('img')
-                    img.setAttribute('src', "../assets/fotos/Paquete.jpeg")
-                    img.setAttribute('class', 'producto--img')
-                const titulo = document.createElement('h3')
-                    titulo.innerText = "Paquete #"+i
-
-                const nuevoProd = document.createElement('article')
-                    nuevoProd.appendChild(img)  
-                    nuevoProd.appendChild(titulo)
-                    nuevoProd.setAttribute('class', 'producto')
-
-                document.getElementById('contenedor-productos').appendChild(nuevoProd)
+            const producto = {
+                nombre: 'Paquete'
+                , imagen: '/assets/fotos/Paquete.jpeg'
+                , precio: '300,00'
             }
+
+            function dibujarNProductos(cantidadProductos){
+                let listadoProductos = ''
+                for(let i=2; i<=cantidadProductos; i++){
+                    listadoProductos += `
+                        <article id="producto${i}" class="producto">
+                            <img class="producto--img" src=${producto.imagen}>
+                            <div class="producto--datos">
+                                <h3>${producto.nombre} #${i}</h3>
+                                <p>$${producto.precio}</p>
+                            </div>
+                        </article>    
+                    `
+                }
+
+                document.getElementById('contenedor-productos').innerHTML+=(listadoProductos)
+            }
+            
+            
+            dibujarNProductos(40)
+
         </script>
 
     </body>
