@@ -21,26 +21,29 @@
         align-items: center;
     }
 
-    .top-nav img{
-        height: 2em;
-        border-radius: 100%;
-        background-color: rgba(233, 159, 36, 0.15);
-    }
-
-    .top-nav a{
+    .top-nav-button{
+        display: flex;
+        align-items: center;
         color: whitesmoke;
         text-decoration: none;
     }
 
-    .top-nav a:hover{
+    .top-nav-button img{
+        height: 2em;
+        border-radius: 100%;
+        background-color: rgba(233, 159, 36, 0.15);
+    }
+    .top-nav-button:hover{
         color: whitesmoke;
         background-color: var(--color-terciario);
         height: 2em;
+        
     }
 
-    .link-inicio{
-        display: flex;
-        align-items: center;
+    @media (max-width: 530px){ 
+        .top-nav-button-descripcion{
+            display: none;
+        }   
     }
 
 /********************** Footer *******************/
@@ -96,4 +99,3 @@
     input[type="submit"]{
         cursor: pointer;
     }
-
