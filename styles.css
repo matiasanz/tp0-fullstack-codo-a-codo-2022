@@ -31,19 +31,19 @@
     .top-nav-button img{
         height: 2em;
         border-radius: 100%;
-        background-color: rgba(233, 159, 36, 0.15);
+        background-color: rgba(233, 159, 36, 0.25);
     }
     .top-nav-button:hover{
         color: whitesmoke;
         background-color: var(--color-terciario);
         height: 2em;
-        
+
     }
 
-    @media (max-width: 530px){ 
+    @media (max-width: 530px){
         .top-nav-button-descripcion{
             display: none;
-        }   
+        }
     }
 
 /********************** Footer *******************/
@@ -64,7 +64,7 @@
     }
 
     /*posicion*/
-    footer{ 
+    footer{
         position: fixed;
         bottom: 0;
     }
@@ -81,7 +81,7 @@
         background: linear-gradient(
             rgba(255,255,255,.5)
             , rgba(255,255,255,.5)
-        ), url('/assets/tramas/trama.png');
+        ), url('./assets/tramas/trama.png');
     }
 
     main{
