@@ -1,6 +1,6 @@
 import productos from './productos.js'
 
-        const formatoPrecio = precio => precio.toLocaleString(undefined, { minimumFractionDigits: 2 , maximumFractionDigits: 2})
+        const formatoPrecio = precio => precio.toLocaleString('de-DE', { minimumFractionDigits: 2 , maximumFractionDigits: 2})
 
         function dibujarProductos(productos){
             let listadoProductos = ''
@@ -42,6 +42,7 @@ import productos from './productos.js'
                 )    
             )
         }
+
 
         /****** Inicializar ******/
 
