@@ -26,6 +26,14 @@
         align-items: center;
         color: whitesmoke;
         text-decoration: none;
+        height: inherit;
+    }
+
+    .top-nav-button-selected{
+        text-shadow: black 1px 1px;
+
+        color: var(--color-primario);    
+        padding: 0 0.2em;
     }
 
     .top-nav-button img{
@@ -34,10 +42,9 @@
         background-color: rgba(233, 159, 36, 0.15);
     }
     .top-nav-button:hover{
+        border-radius: 1em;
         color: whitesmoke;
         background-color: var(--color-terciario);
-        height: 2em;
-        
     }
 
     @media (max-width: 530px){ 

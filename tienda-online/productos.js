@@ -18,7 +18,7 @@ export default [
     new Producto('Cafetera Dolce Gusto', 24000,  [CAFETERAS], 'cafetera-dolce.webp', descripcionDefault)
     , new Producto('Cafetera Oyster', 39000,  [CAFETERAS], 'cafetera-oster.webp', descripcionDefault)
     , new Producto('Cápsulas Dolce Gusto Chococino', 2700, [CAPSULAS], 'capsulas-chococino.webp', descripcionDefault)
-    , new Producto('Cápsulas Dolce Gusto Lungos', 2700, [CAPSULAS], 'capsulas-lungo.webp', descripcionDefault)
+    , new Producto('Cápsulas Dolce Gusto Lungo', 2700, [CAPSULAS], 'capsulas-lungo.webp', descripcionDefault)
     , new Producto('Cápsulas Dolce Gusto Café con Leche', 2700, [CAPSULAS], 'capsulas-cafeconleche.webp', descripcionDefault)
     , new Producto('Remera Vaso', 2700, [MERCHANDISING], 'remera-vaso.webp', descripcionDefault)
     , new Producto('Remera Astronauta Luna', 2700, [MERCHANDISING], 'remera-astronauta-luna.webp', descripcionDefault)
