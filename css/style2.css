@@ -1,4 +1,4 @@
-/*Font Type*/
+/*Font Type*********************************/
 @font-face {
     font-family: 'gothamblack';
     src: url('../fonts/Gotham/gotham-black-webfont.woff2') format('woff2'),
@@ -22,22 +22,13 @@
     font-weight: normal;
     font-style: normal;
 }
+/***********************************************/
 
-
-
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed,
-figure, figcaption, footer, header, hgroup,
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
+/* HTML5 reset for older browsers */
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
 	margin: 0;
 	padding: 0;
 	border: 0;
@@ -45,11 +36,9 @@ time, mark, audio, video {
 	font: inherit;
 	vertical-align: baseline;
 }
-
+/***********************************************/
 /* HTML5 display-role reset for older browsers */
-
-article, aside, details, figcaption, figure,
-footer, header, hgroup, menu, nav, section {
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
 	display: block;
 }
 body {
@@ -61,8 +50,7 @@ ol, ul {
 blockquote, q {
 	quotes: none;
 }
-blockquote:before, blockquote:after,
-q:before, q:after {
+blockquote:before, blockquote:after, q:before, q:after {
 	content: '';
 	content: none;
 }
@@ -70,7 +58,7 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
-
+/***********************************************/
 /*
 para menu hamburquesa
 */
@@ -134,38 +122,55 @@ body {
     display: none;
   }
 */
-
-
+html{
+	height: 100%
+}
+body{
+	height: 100%
+}
 header{
     padding: 0;
     background-color: #000000;
 }
+main{
+    min-height: 200px;
+    overflow: auto;
+}
+main > div.contenido-ppal{
+    float: left;
+    width: 100%;
+}
+footer{
+	background-color: #000000;
+	min-height: 100px;
+	overflow: auto;
+
+	position:absolute;
+  	bottom:0;
+  	left:0;
+  	width:100%;
+}
 
 /* Extra small devices (phones, 600px and down) */
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 600px){
     header #header-logo{
         float: right;
         background-image: url(../assets/logo/logo3_2.png);
         height: 50px;
         width: 138px;
     }
-
     nav{
         overflow: auto;
     }
-
     nav ul{
         display: none;
     }
-
     nav input:checked  ~ ul{
         display:block;
     }
-
     nav input#menu {
         display: none;
     }
-
     nav .menu-label {
         /*float: right;*/
         color: #ffffff;
@@ -182,9 +187,7 @@ header{
         text-align: center;
         user-select: none;
       }
-
     nav li {
-
         display: block;
         background-color: #000000;
         margin: 0;
@@ -203,7 +206,6 @@ header{
         font-family: gothammedium;
         */
     }
-
     nav li a{
         color: #ffffff;
         text-decoration: none;
@@ -220,15 +222,12 @@ header{
         height: 50px;
         width: 138px;
     }
-
     nav input#menu {
         display: none;
     }
-
     nav{
         overflow: auto;
     }
-
     nav ul{
         margin-left: 15px;
         list-style: none;
@@ -249,13 +248,3 @@ header{
         color: #f0a046;
     }
 }
-
-
-/*menu hamburguesa 2*/
-
-
-
-
-
-
-
