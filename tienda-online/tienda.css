@@ -27,17 +27,29 @@
 .contenedor-productos{
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(5em, 10em));
+    gap: 1em;
 }
 
 .producto{
     display: flex;
     flex-direction: column;
     align-items: center;
+    max-width: inherit;
+}
+
+.box-img{
+    height: 6.25em;
+    width: 6.25em;
+    border-radius: 100%;
+    object-fit: contain;
+    overflow: hidden;
+    background-color: gray;
+    display: flex;
+    justify-content: center;
 }
 
 .producto--img{
-    height: 6.25em;
-    border-radius: 100%;            
+    height: inherit;
 }        
 
 .producto--datos{
@@ -45,8 +57,21 @@
     flex-direction: column;
     align-items: center;
     justify-content: flex-start;
+    max-height: inherit;
 }
 
 .producto--datos h3{
     margin-bottom: 0;
 }
+
+.producto--nombre{
+    font-size: 1em;
+    text-align: center;
+    max-height: 2em;
+    font-size: medium;
+   
+    line-height: 1em;
+    word-wrap: break-word;
+    text-overflow: ellipsis;
+    max-height: inherit;
+}   
