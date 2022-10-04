@@ -122,6 +122,10 @@ body {
     display: none;
   }
 */
+* {
+    padding: 0;
+    box-sizing: border-box;
+}
 html{
 	height: 100%
 }
@@ -144,11 +148,11 @@ footer{
 	background-color: #000000;
 	min-height: 100px;
 	overflow: auto;
-
 	position:absolute;
   	bottom:0;
   	left:0;
   	width:100%;
+	padding: 10px;
 }
 
 /* Extra small devices (phones, 600px and down) */
@@ -213,6 +217,12 @@ footer{
     nav li a:hover{
         color: #f0a046;
     }
+	footer .footer-box{
+		width: 100%;
+		padding: 15px;
+		color: #ffffff;
+		display: block;
+	}
 }
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) {
@@ -247,4 +257,12 @@ footer{
     nav li a:hover{
         color: #f0a046;
     }
+
+	footer .footer-box{
+		float: left;
+		width: 33%;
+		padding: 15px;
+		color: #ffffff;
+		border: #ffffff solid 1px;
+	}
 }
