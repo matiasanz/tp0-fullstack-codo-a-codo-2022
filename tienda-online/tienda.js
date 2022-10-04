@@ -25,8 +25,8 @@ import productos from './productos.js'
         dibujarProductos(productos)
 
         function filtrarPorNombre(productos, nombre){
-            const regex = new RegExp(".*"+nombre + ".*")
-            return nombre == ''? productos: productos.filter(p=>regex.test(p.nombre)) 
+            const regex = new RegExp(".*"+nombre.toLowerCase() + ".*")
+            return nombre == ''? productos: productos.filter(p=>regex.test(p.nombre.toLowerCase())) 
         }
 
         function filtrarPorCategoria(productos, categoria){
