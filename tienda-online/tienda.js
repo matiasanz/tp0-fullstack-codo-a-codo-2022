@@ -1,5 +1,7 @@
 import productos from './productos.js'
 
+        /****** Dibujar productos ******/
+
         const formatoPrecio = precio => precio.toLocaleString('de-DE', { minimumFractionDigits: 2 , maximumFractionDigits: 2})
 
         function dibujarProductos(productos){
@@ -21,8 +23,17 @@ import productos from './productos.js'
 
             document.getElementById('contenedor-productos').innerHTML=(listadoProductos)
         }
-        
-        dibujarProductos(productos)
+
+        /****** Filtros ******/
+
+        function aplicarFiltros(){
+            dibujarProductos(
+                filtrarPorCategoria(
+                    filtrarPorNombre(productos, filtro_nombre.value??".*")
+                    , filtro_categoria.value
+                )    
+            )
+        }
 
         function filtrarPorNombre(productos, nombre){
             const regex = new RegExp(".*"+nombre.toLowerCase() + ".*")
@@ -34,17 +45,9 @@ import productos from './productos.js'
             return categoria===CUALQUIERA? productos: productos.filter(p=>p.categorias.includes(categoria))
         }
 
-        function aplicarFiltros(){
-            dibujarProductos(
-                filtrarPorCategoria(
-                    filtrarPorNombre(productos, filtro_nombre.value??".*")
-                    , filtro_categoria.value
-                )    
-            )
-        }
-
-
         /****** Inicializar ******/
+
+        dibujarProductos(productos)
 
         function cargarCategorias(){
             let opciones = ''

@@ -12,6 +12,19 @@
     Ante cualquier problema relacionado, sacar*/
 }
 
+@media (max-width: 522px){ 
+    .with-sidebar{
+        display: block;
+        text-align: center;
+        margin-left: 0;
+    }   
+
+    .contenedor-productos{
+        text-align: center;
+        justify-content: center;
+    }
+}
+
 .contenedor-filtros{
     grid-area: filtros;
 }
@@ -21,6 +34,8 @@
     height: inherit;
     overflow: auto;
 }
+
+
 
 /************************* Grilla Productos **********************/
 
@@ -43,7 +58,7 @@
     border-radius: 100%;
     object-fit: contain;
     overflow: hidden;
-    background-color: gray;
+    background-color: whitesmoke;
     display: flex;
     justify-content: center;
 }
