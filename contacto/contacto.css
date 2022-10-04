@@ -1,0 +1,45 @@
+@import url('/styles.css');
+
+main{
+    display: flex;
+    justify-content: center;
+}
+
+
+.espacio-consultas{
+    background-image: url('../assets/logo/logo1.jpeg');
+    background-repeat: round;
+    border: black solid 1px;
+    width: fit-content;
+    height: fit-content;
+    padding: 0.5em 4em;
+}
+
+.form-contacto{
+    display: flex;
+    flex-direction: column;
+    width: 15em;
+}
+
+.fila-datos{
+    display: flex;
+}
+
+.fila-datos .dato{
+    width: 50%;
+}
+
+.dato{
+    margin: 0.3em;
+    font-size: 1em;
+    height: 1.7em;
+    border-radius: 0.5em;
+    color: var(--color-terciario);
+    border: var(--color-terciario) 1px solid;
+    background-color: rgba(255,255,255,0.85);
+}
+
+.dato-textarea{
+    height: 3em;
+    resize: none;
+}

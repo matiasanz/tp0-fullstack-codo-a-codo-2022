@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" type="image/x-icon" href="/assets/favicon.ico">
+        <link rel="stylesheet" href="/styles.css"/>
+        <link rel="stylesheet" href="./tienda.css"/>
+        <title>Tienda Online</title>
+    </head>
+    <body>
+        <header class="header">
+            <nav class="top-nav">
+                <a href="/" class="top-nav-button">
+                    <img src="/assets/logo/logo2-erased.png" alt="Strainer Coffee">
+                    <p class="top-nav-button-descripcion">Inicio</p>
+                </a>
+                <a href="/tienda-online" class="top-nav-button">
+                    <img src="/assets/iconos/tienda.png" class="icono">
+                    <p class="top-nav-button-descripcion">Nuestros Productos</p>
+                </a>
+                <a href="/origenes" class="top-nav-button">
+                    <img src="/assets/iconos/origenes.png" class="icono">
+                    <p class="top-nav-button-descripcion">Orígenes</p>
+                </a>
+                <a href="/sucursales" class="top-nav-button">
+                    <img src="/assets/iconos/ubicacion.png" class="icono">
+                    <p class="top-nav-button-descripcion">Dónde Encontrarnos</p>
+                </a>
+                <a href="/contacto" class="top-nav-button">
+                    <img src="/assets/iconos/contacto.png" class="icono">
+                    <p class="top-nav-button-descripcion">Contacto</p>
+                </a>
+            </nav>
+
+            <h1>Nuestros Productos</h1>
+        </header>
+        <main class="with-sidebar">
+            <section class="contenedor-filtros">
+                <form>
+                    <label for="filtro_nombre">Buscar</label>
+                    <input id="filtro_nombre" type="search" placeholder="Nombre Producto..."/></form>
+                    <br>
+                    <label for="filtro_categoria">Categoría</label>
+                    <select id="filtro_categoria">
+                        <option>Todas</option>
+                        <option>Café</option>
+                        <option>Cafeteras</option>
+                        <option>Merchandising</option>
+                    </select>
+                </form>
+            </section>
+    
+            <section class="content">
+                <div id="contenedor-productos" class="contenedor-productos">
+                    <article id="producto1" class="producto">
+                        <img class="producto--img" src="/assets/fotos/Paquete.jpeg">
+                        <div class="producto--datos">
+                            <h3>Paquete #1</h3>
+                            <p>$300,00</p>
+                        </div>
+                    </article>    
+                </div>
+            </section>
+    
+        </main>
+        <footer>
+            <img src="/assets/logo/logo3.jpeg" alt="Strainer Coffee™" height="100" width="100">
+            <p>@Copyright 2022 Strainer Coffee™</p>
+        </footer>
+
+        <script>
+            const producto = {
+                nombre: 'Paquete'
+                , imagen: '/assets/fotos/Paquete.jpeg'
+                , precio: '300,00'
+            }
+
+            function dibujarNProductos(cantidadProductos){
+                let listadoProductos = ''
+                for(let i=2; i<=cantidadProductos; i++){
+                    listadoProductos += `
+                        <article id="producto${i}" class="producto">
+                            <img class="producto--img" src=${producto.imagen}>
+                            <div class="producto--datos">
+                                <h3>${producto.nombre} #${i}</h3>
+                                <p>$${producto.precio}</p>
+                            </div>
+                        </article>    
+                    `
+                }
+
+                document.getElementById('contenedor-productos').innerHTML+=(listadoProductos)
+            }
+            
+            
+            dibujarNProductos(40)
+
+        </script>
+
+    </body>
+
+</html>

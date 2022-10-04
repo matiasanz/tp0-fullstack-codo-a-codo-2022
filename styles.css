@@ -1,0 +1,101 @@
+@import url('http://fonts.cdnfonts.com/css/gotham');
+
+*{
+    font-family: 'Gotham', sans-serif;
+}
+
+/****************** Barra superior *********************/
+    :root{
+        --alturaTopNav:2em;
+        --color-primario: #E99F24;
+        --color-secundario: black;
+        --color-terciario: #405D51;
+    }
+
+    .top-nav{
+        height: var(--alturaTopNav);
+        background-image: url("./assets/topnav.jpg");
+        width: auto;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .top-nav-button{
+        display: flex;
+        align-items: center;
+        color: whitesmoke;
+        text-decoration: none;
+    }
+
+    .top-nav-button img{
+        height: 2em;
+        border-radius: 100%;
+        background-color: rgba(233, 159, 36, 0.25);
+    }
+    .top-nav-button:hover{
+        color: whitesmoke;
+        background-color: var(--color-terciario);
+        height: 2em;
+
+    }
+
+    @media (max-width: 530px){
+        .top-nav-button-descripcion{
+            display: none;
+        }
+    }
+
+/********************** Footer *******************/
+    footer{
+        width: 100%;
+        margin-top: 1em;
+        background-color: var(--color-secundario);
+        color: whitesmoke;
+        font-style: italic;
+    }
+
+    /*Alineamiento*/
+    footer{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    /*posicion*/
+    footer{
+        position: fixed;
+        bottom: 0;
+    }
+
+/*************** Contenido Principal *************/
+    body{
+        margin: 0;
+        display: grid;
+        grid-template-rows: fit-content auto;
+        grid-template-areas:
+            "header"
+            "content"
+            ;
+        background: linear-gradient(
+            rgba(255,255,255,.5)
+            , rgba(255,255,255,.5)
+        ), url('./assets/tramas/trama.png');
+    }
+
+    main{
+        grid-area: content;
+        height: calc(100vh - 14.25em);
+        overflow: auto;
+    }
+
+    .header{
+        grid-area: header;
+        text-align: center;
+    }
+
+/***************** Varios ***************/
+    input[type="submit"]{
+        cursor: pointer;
+    }
