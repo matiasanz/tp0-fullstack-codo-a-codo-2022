@@ -86,8 +86,45 @@
             <!--<aside></aside>-->
         </main>
         <footer>
-            <img src="/assets/logo/logo3.jpeg" alt="Strainer Coffee™" height="100" width="100">
+            <img src="/assets/logo/logo3.jpeg" alt="Strainer Coffee™" height="100">
             <p>@Copyright 2022 Strainer Coffee™</p>
+            <section class="contenedor-contactos">
+                <div class="footer--contacto">
+                    <img alt="Email:" src="/assets/iconos/mail.png">
+                    <i>holastrainer@hotmail.com</i>
+                </div>
+                <div class="footer--contacto">
+                    <img alt="Instagram:" src="/assets/iconos/instagram.png">
+                    <i>/Strainer.Coffee</i>
+                </div>
+            </section>
         </footer>
+
+        <style>
+            footer{
+                background-color: black;
+
+            }
+
+
+            .contenedor-contactos{
+                display: flex;
+                flex-direction: column;
+                gap: 0.3em;
+            }
+
+            .footer--contacto{
+                display: flex;
+                align-items: center;
+                gap: 0.8em
+            }
+
+            .footer--contacto img{
+                height: 1.5em;
+                background-color: whitesmoke;
+                padding: 0.15em;
+                border-radius: 100%;
+            }
+        </style>
     </body>
 </html>
