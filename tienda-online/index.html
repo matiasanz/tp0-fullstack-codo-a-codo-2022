@@ -16,7 +16,7 @@
                     <img src="/assets/logo/logo2-erased.png" alt="Strainer Coffee">
                     <p class="top-nav-button-descripcion">Inicio</p>
                 </a>
-                <a href="/tienda-online" class="top-nav-button">
+                <a href="/tienda-online" class="top-nav-button top-nav-button-selected">
                     <img src="/assets/iconos/tienda.png" class="icono">
                     <p class="top-nav-button-descripcion">Nuestros Productos</p>
                 </a>
@@ -38,29 +38,20 @@
         </header>
         <main class="with-sidebar">
             <section class="contenedor-filtros">
-                <form>
+                <form onsubmit="return false;">
                     <label for="filtro_nombre">Buscar</label>
-                    <input id="filtro_nombre" type="search" placeholder="Nombre Producto..."/></form>
+                    <input name=filtro_nombre id="filtro_nombre" type="search" placeholder="Nombre Producto...">
                     <br>
                     <label for="filtro_categoria">Categoría</label>
-                    <select id="filtro_categoria">
-                        <option>Todas</option>
-                        <option>Café</option>
-                        <option>Cafeteras</option>
-                        <option>Merchandising</option>
+                    <select name="filtro_categoria" id="filtro_categoria">
+                        <option selected value="Todas">Todas</option>
                     </select>
                 </form>
             </section>
     
             <section class="content">
                 <div id="contenedor-productos" class="contenedor-productos">
-                    <article id="producto1" class="producto">
-                        <img class="producto--img" src="/assets/fotos/Paquete.jpeg">
-                        <div class="producto--datos">
-                            <h3>Paquete #1</h3>
-                            <p>$300,00</p>
-                        </div>
-                    </article>    
+                    <!--Acá se insertan los productos-->    
                 </div>
             </section>
     
@@ -70,35 +61,7 @@
             <p>@Copyright 2022 Strainer Coffee™</p>
         </footer>
 
-        <script>
-            const producto = {
-                nombre: 'Paquete'
-                , imagen: '/assets/fotos/Paquete.jpeg'
-                , precio: '300,00'
-            }
-
-            function dibujarNProductos(cantidadProductos){
-                let listadoProductos = ''
-                for(let i=2; i<=cantidadProductos; i++){
-                    listadoProductos += `
-                        <article id="producto${i}" class="producto">
-                            <img class="producto--img" src=${producto.imagen}>
-                            <div class="producto--datos">
-                                <h3>${producto.nombre} #${i}</h3>
-                                <p>$${producto.precio}</p>
-                            </div>
-                        </article>    
-                    `
-                }
-
-                document.getElementById('contenedor-productos').innerHTML+=(listadoProductos)
-            }
-            
-            
-            dibujarNProductos(40)
-
-        </script>
-
+        <script type="module" src="/tienda-online/tienda.js"></script>
     </body>
 
 </html>
