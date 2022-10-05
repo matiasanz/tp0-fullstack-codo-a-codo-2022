@@ -82,14 +82,17 @@ main > div.contenido-ppal{
     float: left;
     width: 100%;
     min-height: 450px;
+	overflow: auto;
 }
 footer{
 	background-color: #000000;
 	min-height: 100px;
 	overflow: auto;
+	/*
 	position:absolute;
   	bottom:0;
   	left:0;
+	*/
   	width:100%;
 	padding: 10px;
 }
@@ -211,6 +214,133 @@ footer{
 	footer .footer-box span{
 		font-family: Arial, Helvetica, sans-serif;
 		font-size: 0.9em;
+	}
+
+	/*secciones index*/
+	.contentfl{
+		/*
+		float: left;
+		overflow: auto;
+		padding-left: 20px;
+		*/
+		overflow: auto;
+		padding: 20px;
+	}
+
+	.contentfl  h1{
+		line-height: 5vh;
+		font-size: 9vh;
+		color: rgb(232, 159, 35);
+		font-family: gothammedium;/*gothamblack;/*'gothamblack';*/
+		margin-bottom: 0;
+	}
+	.contentfl  h2{
+		color: #ffffff;
+		font-family: gothambold;/*gothamblack;/*'gothamblack';*/
+	}
+
+	.coffee-header1{
+		padding: 10px;
+		background-color: #000000;
+		background-size: cover;
+		background-image: url(../assets/fotos/granosCafe.jpeg);
+		/*height: 200px;*/
+		width: 100%;
+		overflow: auto;
+		/*opacity: 0.9;*/
+	}
+	/*gothamblack;/*'gothamblack';*/
+	/*
+	.coffee-header1  h1{
+		line-height: 5vh;
+		font-size: 9vh;
+		color: #ffffff;
+		font-family: gothammedium;
+		margin-bottom: 0;
+	}
+	.coffee-header1  h2{
+		color: #ffffff;
+		font-family: gothambold;
+	}
+	*/
+	.transbox1{
+		margin: 0px;
+		/*padding: 0 20px 10px 30px;*/
+		padding: 0;
+		border: 1px solid black;
+		background: rgba(0, 0, 0, 0.3);
+		overflow: auto;
+	}
+	.index-logo1{
+		float: left;
+		background-size: cover;
+		background-image: url(../assets/logo/logo1_150.jpg);
+		height: 150px;
+		width: 150px;
+	}
+
+	.coffee-header2{
+		padding: 10px;
+		background-color: #000000;
+		background-size: cover;
+		background-image: url(../assets/fotos/frutoCafe.jpeg);
+		/*height: 200px;*/
+		width: 100%;
+		overflow: auto;
+		/*opacity: 0.9;*/
+	}
+	/*
+	.coffee-header2  h1{
+		line-height: 5vh;
+		font-size: 9vh;
+		color: rgb(232, 159, 35);
+		font-family: gothammedium;
+		margin-bottom: 0;
+	}
+	.coffee-header2  h2{
+		color: #ffffff;
+		font-family: gothambold;
+	}
+	*/
+	.transbox2{
+		margin: 0px;
+		padding: 0;
+		border: 1px solid black;
+		background: rgba(0, 0, 0, 0.3);
+		overflow: auto;
+	}
+	.index-logo2{
+		float: left;
+		background-size: cover;
+		background-image: url(../assets/logo/logo2_150.jpg);
+		height: 150px;
+		width: 150px;
+	}
+
+
+	.secciones{
+		margin: 0px;
+		/*padding: 0 20px 10px 30px;*/
+		padding: 10px;
+		/*border: 1px solid black;*/
+		overflow: auto;
+		min-height: 50px;
+	}
+	.seccbg-0{
+		background: rgb(255, 255, 255);
+	}
+	.seccbg-1{
+		background: rgba(64, 92, 81, 1);
+	}
+	.seccbg-2{
+		background: rgba(237, 224, 207, 1);
+	}
+	.seccbgimg-1{
+		min-height: 450px;
+		background-size: cover;
+
+		/*background: rgba(0, 0, 0, 0.3);*/
+		background-image: url(../assets/fotos/paisaje2.jpeg);
 	}
 }
 
