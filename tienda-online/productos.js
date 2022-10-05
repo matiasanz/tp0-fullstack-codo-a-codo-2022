@@ -1,5 +1,8 @@
+let siguienteId=0
+
 class Producto{
     constructor(nombre, precio, categorias, imagen, descripcion){
+        this.id = siguienteId++
         this.nombre=nombre
         this.categorias = categorias
         this.descripcion = descripcion
