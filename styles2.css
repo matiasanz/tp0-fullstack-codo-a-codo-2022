@@ -121,6 +121,7 @@
         overflow: auto;
         width:100%;
         padding: 10px;
+        margin-top: 15px;
     }
 
     @media only screen and (max-width: 600px){
@@ -221,7 +222,7 @@
 
         footer .footer-box{
             float: left;
-            width: 33%;
+            width: 30%;
             padding: 20px;
             color: #ffffff;
             font-family: sans-serif;
@@ -250,6 +251,7 @@
     main{
         grid-area: content;
         /*height: calc(100vh - 14.25em);*/
+        min-height: 450px;
         overflow: auto;
     }
 
