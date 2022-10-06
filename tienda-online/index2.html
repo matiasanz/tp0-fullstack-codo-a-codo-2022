@@ -5,10 +5,11 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Strainer Coffee</title>
-        <link rel="icon" type="image/x-icon" href="./assets/favicon.ico">
+        <link rel="icon" type="image/x-icon" href="../assets/favicon.ico">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <link rel="stylesheet" href="../styles2.css"/>
-        <link rel="stylesheet" href="../principal2.css"/>
+        <!--<link rel="stylesheet" href="../principal2.css"/>-->
+        <link rel="stylesheet" href="tienda2.css"/>
     </head>
     <body>
         <header class="header">
@@ -26,8 +27,24 @@
             </nav>
         </header>
         <main >
-            <div class="contenido-ppal">
-
+            <h1>Nuestros Productos</h1>
+            <div class="with-sidebar">
+                <section class="contenedor-filtros">
+                    <form onsubmit="return false;">
+                        <label for="filtro_nombre">Buscar</label>
+                        <input name=filtro_nombre id="filtro_nombre" type="search" placeholder="Nombre Producto...">
+                        <br>
+                        <label for="filtro_categoria">Categoría</label>
+                        <select name="filtro_categoria" id="filtro_categoria">
+                            <option selected value="Todas">Todas</option>
+                        </select>
+                    </form>
+                </section>
+                <section class="content">
+                    <div id="contenedor-productos" class="contenedor-productos">
+                        <!--Acá se insertan los productos-->
+                    </div>
+                </section>
             </div>
             <!--<aside></aside>-->
         </main>
@@ -71,5 +88,6 @@
                 <span>© 2022 Strainer Coffee. Todos los Derechos Reservados.</span>
             </section>
         </footer>
+        <script type="module" src="tienda.js"></script>
     </body>
 </html>

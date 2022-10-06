@@ -11,13 +11,13 @@ import productos from './productos.js'
                 listadoProductos += `
                     <article id="producto${i}" class="producto">
                         <div class="box-img">
-                            <img class="producto--img" src="/assets/productos/${producto.imagen}">
+                            <img class="producto--img" src="../assets/productos/${producto.imagen}">
                         </div>
                         <div class="producto--datos">
                             <h3 class="producto--nombre">${producto.nombre}</h3>
                             <p>$${formatoPrecio(producto.precio)}</p>
                         </div>
-                    </article>    
+                    </article>
                 `
             }
 
@@ -31,13 +31,13 @@ import productos from './productos.js'
                 filtrarPorCategoria(
                     filtrarPorNombre(productos, filtro_nombre.value??".*")
                     , filtro_categoria.value
-                )    
+                )
             )
         }
 
         function filtrarPorNombre(productos, nombre){
             const regex = new RegExp(".*"+nombre.toLowerCase() + ".*")
-            return nombre == ''? productos: productos.filter(p=>regex.test(p.nombre.toLowerCase())) 
+            return nombre == ''? productos: productos.filter(p=>regex.test(p.nombre.toLowerCase()))
         }
 
         function filtrarPorCategoria(productos, categoria){
