@@ -1,0 +1,186 @@
+main{ /*Puse esto para que ocupe mas espacio*/
+    height: calc(100vh - 8.25em);
+}
+
+/** ---------------------------- **/
+
+* {
+    box-sizing: border-box;
+}
+
+
+main > div.contenido-ppal{
+    float: left;
+    width: 100%;
+}
+
+.header-menubar{
+    margin: 0.5rem 1rem 0.5rem 1rem;
+    /*position: relative;
+    top: -50px;
+    left: 300px;*/
+
+}
+.header-menubar ul{
+    list-style: none;
+}
+.header-menubar li{
+    float: right;
+    font-weight: 600;
+    text-align: center;
+    color: #ffffff;
+    margin-right: 1.5em;
+    font-family: gothammedium;
+}
+.header-menubar li a{
+    color: #ffffff;
+    text-decoration: none;
+}
+.header-menubar li a:hover{
+    color: #f0a046;
+}
+
+
+header{
+    padding: 0;
+}
+
+header #header-logo{
+    float: left;
+    background-image: url(../assets/logo/logo3_2.png);
+    height: 50px;
+    width: 138px;
+}
+
+.contentfl{
+    float: left;
+    overflow: auto;
+    padding-left: 20px;
+}
+
+.coffee-header1{
+    padding: 10px;
+    background-color: #000000;
+    background-size: cover;
+    background-image: url(../assets/fotos/granosCafe.jpeg);
+    /*height: 200px;*/
+    width: 100%;
+    overflow: auto;
+    /*opacity: 0.9;*/
+}
+.coffee-header1  h1{
+    line-height: 5vh;
+    font-size: 9vh;
+    color: #ffffff;
+    font-family: gothammedium;/*gothamblack;/*'gothamblack';*/
+    margin-bottom: 0;
+}
+.coffee-header1  h2{
+    color: #ffffff;
+    font-family: gothambold;/*gothamblack;/*'gothamblack';*/
+}
+.transbox1{
+    margin: 0px;
+    /*padding: 0 20px 10px 30px;*/
+    padding: 0;
+    border: 1px solid black;
+    background: rgba(0, 0, 0, 0.3);
+    overflow: auto;
+}
+.index-logo1{
+    float: left;
+    background-size: cover;
+    background-image: url(../assets/logo/logo1_150.jpg);
+    height: 150px;
+    width: 150px;
+}
+
+
+
+.coffee-header2{
+    padding: 10px;
+    background-color: #000000;
+    background-size: cover;
+    background-image: url(../assets/fotos/frutoCafe.jpeg);
+    /*height: 200px;*/
+    width: 100%;
+    overflow: auto;
+    /*opacity: 0.9;*/
+}
+.coffee-header2  h1{
+    line-height: 5vh;
+    font-size: 9vh;
+    color: rgb(232, 159, 35);
+    font-family: gothammedium;/*gothamblack;/*'gothamblack';*/
+    margin-bottom: 0;
+}
+.coffee-header2  h2{
+    color: #ffffff;
+    font-family: gothambold;/*gothamblack;/*'gothamblack';*/
+}
+.transbox2{
+    margin: 0px;
+    padding: 0;
+    border: 1px solid black;
+    background: rgba(0, 0, 0, 0.3);
+    overflow: auto;
+}
+.index-logo2{
+    float: left;
+    background-size: cover;
+    background-image: url(../assets/logo/logo2_150.jpg);
+    height: 150px;
+    width: 150px;
+}
+
+
+.secciones{
+    margin: 0px;
+    /*padding: 0 20px 10px 30px;*/
+    padding: 10px;
+    /*border: 1px solid black;*/
+    overflow: auto;
+    min-height: 50px;
+}
+.seccbg-0{
+    background: rgb(255, 255, 255);
+}
+.seccbg-1{
+    background: rgba(64, 92, 81, 1);
+}
+.seccbg-2{
+    background: rgba(237, 224, 207, 1);
+}
+.seccbgimg-1{
+    min-height: 450px;
+    background-size: cover;
+
+    /*background: rgba(0, 0, 0, 0.3);*/
+    background-image: url(../assets/fotos/paisaje2.jpeg);
+}
+
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+
+[class*="col-"] {
+    float: left;
+    padding: 15px;
+    /*border: 1px solid red;*/
+    border: 0;
+}
+
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
