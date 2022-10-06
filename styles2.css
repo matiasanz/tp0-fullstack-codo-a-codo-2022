@@ -200,7 +200,8 @@
         }
         nav.top-nav li{
             float: left;
-            font-weight: 600;
+            font-weight: 700;
+            font-size: 0.9em;
             text-align: center;
             color: #ffffff;
             margin-right: 1.5em;
@@ -211,6 +212,10 @@
             text-decoration: none;
         }
         nav.top-nav li a:hover{
+            color: #f0a046;
+        }
+
+        nav.top-nav li a.lnkactive{
             color: #f0a046;
         }
 
