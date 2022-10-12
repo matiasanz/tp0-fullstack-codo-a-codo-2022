@@ -449,3 +449,28 @@
     grid-column-end: 3; 
     text-align: left;
 }
+
+.datos{
+    display: inline-grid;
+    grid-template-columns: 1fr 1fr;
+    
+    /*grid-row-gap: 10px;
+    grid-column-gap: 20px;
+    */
+    width: 100%;
+    height: auto;
+    /*grid-template-rows: 100% ;
+    */
+    justify-content: center;
+    align-content: stretch;
+    color: rgb(232,159,35); 
+    font-family: 'gothamblack';
+    text-align: center ; 
+}
+
+.grid-item{
+    text-align: center;
+    color: black;
+    font-family: 'gothambold';
+
+}
