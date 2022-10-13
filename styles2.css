@@ -382,7 +382,7 @@
     text-align: left;
 }
 
-.datos{
+.sucursales-container{
     display: inline-grid;
     grid-template-columns: 1fr 1fr;
     
@@ -395,16 +395,22 @@
     */
     justify-content: center;
     align-content: stretch;
-    color: rgb(232,159,35); 
-    font-family: 'gothamblack';
-    text-align: center ; 
-}
-
-.grid-item{
-    text-align: center;
     color: black;
     font-family: 'gothambold';
+    text-align: center ; 
 
+}
+
+.sucursal1{
+    text-align: center;
+    font-family: 'gothambold';
+    
+}
+
+.sucursal2{
+    text-align: center;
+    font-family: 'gothambold';
+    
 }
 
 @media (max-width: 522px){
@@ -467,4 +473,30 @@
         transform: scale(1.3,1.3);
     }
 
+    .sucursales-container {
+        grid-template-rows: 1fr 1 fr ;
+        grid-template-columns: 1fr  ;
+        text-align: center;
+        justify-content: center;      
+    }
+
+    .sucursal1{
+        grid-row-start: 1;
+        grid-row-end: 2; 
+        grid-column-start: 1;
+        grid-column-end: 2; 
+        text-align: center;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .sucursal2{
+        grid-row-start: 2;
+        grid-row-end: 3; 
+        grid-column-start: 1;
+        grid-column-end: 2; 
+        text-align: center;
+        justify-content: center;
+        width: 100%;
+    }
 }
