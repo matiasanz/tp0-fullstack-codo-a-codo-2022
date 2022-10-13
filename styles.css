@@ -1,12 +1,41 @@
-@import url('http://fonts.cdnfonts.com/css/gotham');
+/*@import url('http://fonts.cdnfonts.com/css/gotham');*/
+
+/*Font Type*/
+@font-face {
+    font-family: 'gothamblack';
+    src: url('fonts/Gotham/gotham-black-webfont.woff2') format('woff2'),
+         url('fonts/Gotham/gotham-black-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'gothammedium';
+    src: url('fonts/Gotham/gothammedium-webfont.woff2') format('woff2'),
+         url('fonts/Gotham/gothammedium-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'gothambold';
+    src: url('fonts/Gotham/gotham-bold-webfont.woff') format('woff2'),
+         url('fonts/Gotham/gotham-black-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
 
 *{
     font-family: 'Gotham', sans-serif;
 }
 
+h1{
+    text-align: center;
+}
+
 /****************** Barra superior *********************/
     :root{
-        --alturaTopNav:2em;
+        --alturaTopNav:4em;
         --color-primario: #E99F24;
         --color-secundario: black;
         --color-terciario: #405D51;
@@ -21,59 +50,147 @@
         align-items: center;
     }
 
-    .top-nav-button{
-        display: flex;
-        align-items: center;
-        color: whitesmoke;
-        text-decoration: none;
-        height: inherit;
+    .logo-top-nav{
+        width: 190px;
     }
 
-    .top-nav-button-selected{
-        text-shadow: black 1px 1px;
-
-        color: var(--color-primario);
-        padding: 0 0.2em;
-    }
-
-    .top-nav-button img{
-        height: 2em;
-        border-radius: 100%;
-        background-color: rgba(233, 159, 36, 0.25);
-    }
-    .top-nav-button:hover{
-        border-radius: 1em;
-        color: whitesmoke;
-        background-color: var(--color-terciario);
-    }
-
-    @media (max-width: 530px){
-        .top-nav-button-descripcion{
-            display: none;
-        }
-    }
 
 /********************** Footer *******************/
-    footer{
+    /*footer{
         width: 100%;
         margin-top: 1em;
         background-color: var(--color-secundario);
         color: whitesmoke;
         font-style: italic;
-    }
-
+    }*/
     /*Alineamiento*/
-    footer{
+    /*footer{
         display: flex;
         flex-direction: row;
         justify-content: space-around;
         align-items: center;
-    }
-
+    }*/
     /*posicion*/
-    footer{
+    /*footer{
         position: fixed;
         bottom: 0;
+    }*/
+
+    footer{
+        background-color: #000000;
+        min-height: 100px;
+        overflow: auto;
+        width:100%;
+        margin-top: 15px;
+    }
+
+    @media only screen and (max-width: 765px){
+
+        nav.top-nav ul{
+            display: none;
+        }
+        nav.top-nav input:checked  ~ ul{
+            display:block;
+        }
+        nav.top-nav input#menu {
+            display: none;
+        }
+        nav.top-nav .menu-label {
+            /*float: right;*/
+            color: #ffffff;
+            background-color: #f0a046;
+            box-sizing: border-box;
+            /*display: inline-block;*/
+            /*border: 1px solid black;*/
+            border-radius: 5px;
+            width: 35px;
+            height: 35px;
+            margin: 5px 0 0 15px;
+            /*font-size: 25px;*/
+            line-height: 35px;
+            font-weight: bold;
+            text-align: center;
+            user-select: none;
+          }
+        nav ul{
+            position: absolute;
+            top: 48px;
+            right: 0px;
+        }
+        nav li {
+            display: block;
+            background-color: #000000;
+            margin: 0;
+            padding: 10px;
+            list-style: none;
+            font-family: gothammedium;
+            text-align: left;
+        }
+        nav li a{
+            color: #ffffff;
+            text-decoration: none;
+        }
+        nav li a:hover{
+            color: #f0a046;
+        }
+
+
+        footer .footer-box{
+            width: 100%;
+            padding: 15px;
+            color: #ffffff;
+            display: block;
+            font-family: sans-serif;
+        }
+        footer .footer-box span{
+            font-size: 0.9em;
+        }
+    }
+    /* Small devices (portrait tablets and large phones, 600px and up) */
+    @media only screen and (min-width: 600px) {
+
+        nav.top-nav input#menu {
+            display: none;
+        }
+        nav.top-nav{
+            overflow: auto;
+        }
+        nav.top-nav ul{
+            margin-left: 15px;
+            list-style: none;
+        }
+        nav.top-nav li{
+            float: left;
+            font-weight: 700;
+            font-size: 0.9em;
+            text-align: center;
+            color: #ffffff;
+            margin-right: 1.5em;
+            font-family: gothammedium;
+        }
+        nav.top-nav li a{
+            color: #ffffff;
+            text-decoration: none;
+        }
+        nav.top-nav li a:hover{
+            color: #f0a046;
+        }
+
+        nav.top-nav li a.lnkactive{
+            color: #f0a046;
+        }
+
+        footer .footer-box{
+            float: left;
+            width: 30%;
+            padding: 20px;
+            color: #ffffff;
+            font-family: sans-serif;
+        }
+        footer .footer-box span{
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 0.9em;
+        }
     }
 
 /*************** Contenido Principal *************/
@@ -93,7 +210,8 @@
 
     main{
         grid-area: content;
-        height: calc(100vh - 14.25em);
+        /*height: calc(100vh - 14.25em);*/
+        min-height: 450px;
         overflow: auto;
     }
 
@@ -106,3 +224,129 @@
     input[type="submit"]{
         cursor: pointer;
     }
+
+
+
+/*iconos redes sociales*/
+/**iconos redes sociales********/
+.fa {
+    padding: 5px;
+    font-size: 20px;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 2px;
+    border-radius: 50%;
+  }
+
+  .fa:hover {
+      opacity: 0.7;
+  }
+
+  .fa-facebook {
+    background: #3B5998;
+    color: white;
+  }
+
+  .fa-twitter {
+    background: #55ACEE;
+    color: white;
+  }
+
+  .fa-google {
+    background: #dd4b39;
+    color: white;
+  }
+
+  .fa-linkedin {
+    background: #007bb5;
+    color: white;
+  }
+
+  .fa-youtube {
+    background: #bb0000;
+    color: white;
+  }
+
+  .fa-instagram {
+    background: #125688;
+    color: white;
+  }
+
+  .fa-pinterest {
+    background: #cb2027;
+    color: white;
+  }
+
+  .fa-snapchat-ghost {
+    background: #fffc00;
+    color: white;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+  }
+
+  .fa-skype {
+    background: #00aff0;
+    color: white;
+  }
+
+  .fa-android {
+    background: #a4c639;
+    color: white;
+  }
+
+  .fa-dribbble {
+    background: #ea4c89;
+    color: white;
+  }
+
+  .fa-vimeo {
+    background: #45bbff;
+    color: white;
+  }
+
+  .fa-tumblr {
+    background: #2c4762;
+    color: white;
+  }
+
+  .fa-vine {
+    background: #00b489;
+    color: white;
+  }
+
+  .fa-foursquare {
+    background: #45bbff;
+    color: white;
+  }
+
+  .fa-stumbleupon {
+    background: #eb4924;
+    color: white;
+  }
+
+  .fa-flickr {
+    background: #f40083;
+    color: white;
+  }
+
+  .fa-yahoo {
+    background: #430297;
+    color: white;
+  }
+
+  .fa-soundcloud {
+    background: #ff5500;
+    color: white;
+  }
+
+  .fa-reddit {
+    background: #ff5700;
+    color: white;
+  }
+
+  .fa-rss {
+    background: #ff6600;
+    color: white;
+  }
+
