@@ -23,7 +23,7 @@ export default [
       new Producto('Soporte Individual', 500, [SOPORTES], 'soporte-bg.png', descripcionDefault)
     , new Producto('Pack Strainer x3 ', 1600, [PACKS], 'pack-bg.png', descripcionDefault)
     , new Producto('Pack Strainer x6', 3500, [PACKS], 'pack2.png', descripcionDefault)
-    , new Producto('Taza Strainer', 1600, [MERCHANDISING], 'taza2.jpeg', descripcionDefault)
+    , new Producto('Taza Strainer', 1600, [MERCHANDISING], 'taza2.png', descripcionDefault)
     , new Producto('Cafetera Dolce Gusto', 24000,  [CAFETERAS], 'cafetera-dolce.webp', descripcionDefault)
     , new Producto('Cafetera Oyster', 39000,  [CAFETERAS], 'cafetera-oster.webp', descripcionDefault)
     , new Producto('Cápsulas Dolce Gusto Chococino', 2700, [CAPSULAS], 'capsulas-chococino.webp', descripcionDefault)
