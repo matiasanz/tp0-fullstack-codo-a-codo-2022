@@ -410,3 +410,31 @@
     font-family: 'gothambold';
 
 }
+
+@media (max-width: 522px){
+    .index-container{
+        grid-template-rows: 1fr 1 fr ;
+        grid-template-columns: 1fr  ;
+        text-align: center;
+        justify-content: center;      
+    }
+
+    .presentacion{
+        grid-row-start: 2;
+        grid-row-end: 3;         
+        grid-column-start: 1;
+        grid-column-end: 2;
+        text-align: center;  
+        justify-content: center; 
+        width: 100%;
+    }
+    .video{
+        grid-row-start: 1;
+        grid-row-end: 2; 
+        grid-column-start: 1;
+        grid-column-end: 2; 
+        text-align: center;
+        justify-content: center;
+    }
+
+}
