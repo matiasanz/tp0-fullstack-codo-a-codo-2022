@@ -1,7 +1,7 @@
 
 .index-container{
     display: inline-grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
     
     /*grid-row-gap: 10px;
     grid-column-gap: 20px;
@@ -17,15 +17,24 @@
     text-align: center ; 
 }
 
-.presentacion{
-    grid-column-start: 1;
-    grid-column-end: 2; 
+.instrucciones{
+    grid-column-start: 2;
+    grid-column-end: 4; 
+    grid-row-start: 1;
+    grid-row-end: 1; 
     text-align: center;   
 }
+
 .video{
-    grid-column-start: 2;
-    grid-column-end: 3; 
-    text-align: left;
+    grid-column-start: 1;
+    grid-column-end: 2; 
+    grid-row-start: 1;
+    grid-row-end: 1; 
+    text-align: center;
+}
+
+.instrucciones:hover{
+    font-size: larger; 
 }
 
 .datos{
@@ -49,8 +58,36 @@
 .grid-item{
     text-align: center;
     color: black;
-    font-family: 'gothambold'
+    font-family: 'gothamblack';
 
+}
+
+.presentacion-container{
+    display: inline-grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    font-family: 'gothambold'
+}
+
+.presentacion{
+    grid-column-start: 1;
+    grid-column-end: 3; 
+    text-align: center; 
+    padding: 20px;
+}
+
+.foto-soporte{
+    grid-column-start: 3;
+    grid-column-end: 4; 
+   
+}
+
+.presentacion:hover{
+    font-weight: bolder;
+}
+
+.foto-soporte:hover{
+    transform: rotate(-10deg);
+    
 }
 
 @media (max-width: 522px){
@@ -61,11 +98,11 @@
         justify-content: center;      
     }
 
-    .presentacion{
+    .instrucciones{
         grid-row-start: 2;
         grid-row-end: 3;         
         grid-column-start: 1;
-        grid-column-end: 2;
+        grid-column-end: 1;
         text-align: center;  
         justify-content: center; 
         width: 100%;
@@ -77,6 +114,29 @@
         grid-column-end: 2; 
         text-align: center;
         justify-content: center;
+    }
+
+    .presentacion-container{
+        display: inline-grid;
+        grid-template-columns: 1fr ;
+        font-family: 'gothambold'
+    }
+    
+    .presentacion{
+        grid-column-start: 1;
+        grid-column-end: 2; 
+        text-align: center; 
+    }
+
+    .foto-soporte{
+        grid-column-start: 1;
+        grid-column-end: 2; 
+        text-align: right;
+       
+    }
+
+    .instrucciones:hover{
+        text-align: center; 
     }
 
 }
