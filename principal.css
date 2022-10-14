@@ -2,7 +2,6 @@
 .index-container{
     display: inline-grid;
     grid-template-columns: 1fr 1fr 1fr;
-    
     /*grid-row-gap: 10px;
     grid-column-gap: 20px;
     */
@@ -22,7 +21,8 @@
     grid-column-end: 4; 
     grid-row-start: 1;
     grid-row-end: 1; 
-    text-align: center;   
+    text-align: center;  
+    color: black; 
 }
 
 .video{
@@ -33,14 +33,13 @@
     text-align: center;
 }
 
-.instrucciones:hover{
+/*.instrucciones:hover{
     font-size: larger; 
-}
+}*/
 
 .datos{
     display: inline-grid;
     grid-template-columns: 1fr 1fr;
-    
     /*grid-row-gap: 10px;
     grid-column-gap: 20px;
     */
