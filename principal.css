@@ -1,4 +1,25 @@
 
+.presentacion-container{
+    display: inline-grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    font-family: 'gothambold'
+}
+
+.presentacion{
+    grid-column-start: 1;
+    grid-column-end: 3; 
+    text-align: center; 
+    padding: 20px;
+    font-size: larger;
+    
+}
+
+.foto-soporte{
+    grid-column-start: 3;
+    grid-column-end: 4; 
+   
+}
+
 .index-container{
     display: inline-grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -23,6 +44,7 @@
     grid-row-end: 1; 
     text-align: center;  
     color: black; 
+    font-size: larger;
 }
 
 .video{
@@ -61,24 +83,7 @@
 
 }
 
-.presentacion-container{
-    display: inline-grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    font-family: 'gothambold'
-}
 
-.presentacion{
-    grid-column-start: 1;
-    grid-column-end: 3; 
-    text-align: center; 
-    padding: 20px;
-}
-
-.foto-soporte{
-    grid-column-start: 3;
-    grid-column-end: 4; 
-   
-}
 
 .presentacion:hover{
     font-weight: bolder;
@@ -105,6 +110,58 @@
         text-align: center;  
         justify-content: center; 
         width: 100%;
+    }
+    .video{
+        grid-row-start: 1;
+        grid-row-end: 2; 
+        grid-column-start: 1;
+        grid-column-end: 2; 
+        text-align: center;
+        justify-content: center;
+    }
+
+    .presentacion-container{
+        display: inline-grid;
+        grid-template-columns: 1fr ;
+        font-family: 'gothambold'
+    }
+    
+    .presentacion{
+        grid-column-start: 1;
+        grid-column-end: 2; 
+        text-align: center; 
+    }
+
+    .foto-soporte{
+        grid-column-start: 1;
+        grid-column-end: 2; 
+        text-align: right;
+       
+    }
+
+    .instrucciones:hover{
+        text-align: center; 
+    }
+
+}
+
+
+@media (max-width: 860px){
+    .index-container{
+        grid-template-rows: 1fr 1fr ;
+        grid-template-columns: 1fr  ;
+        text-align: center;
+        justify-content: center;      
+    }
+
+    .instrucciones{
+        grid-row-start: 2;
+        grid-row-end: 3;         
+        grid-column-start: 1;
+        grid-column-end: 1;
+        text-align: center;  
+        justify-content: center; 
+        width: 80%;
     }
     .video{
         grid-row-start: 1;
