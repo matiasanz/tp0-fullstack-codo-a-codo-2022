@@ -5,12 +5,15 @@
     justify-content: space-around;
 }
 
+.presentacion{
+    width: 25em;
+}
+.video{
+    width: 20em;
+}
 
-@media (min-width:328px){
-    .presentacion{
-        width: 25em;
+@media (max-width:328px){
+    .presentacion, .video{
+        width: 90%;
     }
-    .video{
-        width: 20em;
-    }    
 }
