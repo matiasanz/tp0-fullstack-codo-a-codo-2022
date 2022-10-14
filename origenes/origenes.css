@@ -41,6 +41,10 @@
     grid-column-end: 2; 
 }
 
+.contenido-ppal{ /*Agrego esto para que cuando se transformen las imagenes no afecte al main*/
+    overflow: hidden;
+}
+
 img{
     border: 1px solid black;
     border-radius: 20px;  
@@ -78,4 +82,3 @@ img{
         grid-column-end: 1; 
     }
 }
-
