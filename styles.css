@@ -427,7 +427,7 @@ h1{
 }
 @media (min-width: 836px){
   .coffee-header1  h1{
-      line-height: 1em;
-      font-size: 3em;
+      line-height: 0.55em;
+      font-size: 3.2em;
   }
 }
