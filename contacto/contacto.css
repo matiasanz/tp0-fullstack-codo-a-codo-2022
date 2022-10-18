@@ -1,5 +1,8 @@
 @import url('/styles.css');
 
+.contenido-ppal{
+    overflow-x: hidden;
+}
 
 .card{
     padding: 30px 40px;
