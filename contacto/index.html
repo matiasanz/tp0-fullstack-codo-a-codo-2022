@@ -6,11 +6,15 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Strainer Coffee</title>
         <link rel="icon" type="image/x-icon" href="../assets/favicon.ico">
+
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <link rel="stylesheet" href="../styles.css">
         <link rel="stylesheet" href="./contacto.css">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
     </head>
     <body>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+        <script src="validate.js"></script>
         <header class="header">
             <nav class="top-nav">
                 <a href="../"><img src="../assets/logo/logo3_3.png" class="logo-top-nav" alt="Strainer Coffee"></a>
@@ -26,21 +30,70 @@
             </nav>
         </header>
         <main >
+            <!--
             <div class="contenido-ppal">
                 <h1>Contacto</h1>
                 <section class="espacio-consultas">
                     <h2>Envianos tu consulta</h2>
-                    <form class="form-contacto">
-                        <div class="fila-datos">
-                            <input name="contacto_autor_nombre" required class="dato" type="text" placeholder="Nombre...">
-                            <input name="contacto_autor_apellido" required class="dato" type="text" placeholder="Apellido...">
+                    <form>
+                        <div class="row mb-3">
+                            <label for="colFormLabel" class="col-sm-2 col-form-label">Nombre:</label>
+                            <div class="col-sm-10">
+                                <input type="text" class="form-control" id="colFormLabel" placeholder="col-form-label">
+                            </div>
                         </div>
-                        <input name="contacto_autor_email" required class="dato" type="email" placeholder="Email de Contacto...">
-                        <input name="contacto_asunto" required class="dato" type="text" placeholder="Breve Asunto..." maxlength="32">
-                        <textarea id="contacto_mensaje" required class="dato dato-textarea" placeholder="Consulta..."></textarea>
-                        <input required class="dato" type="submit" value="Enviar">
+
+                        <div class="row mb-3">
+                            <label for="colFormLabel" class="col-sm-2 col-form-label">Email:</label>
+                            <div class="col-sm-10">
+                                <input type="email" class="form-control" id="colFormLabel" placeholder="col-form-label">
+                            </div>
+                        </div>
+
+                        <div class="row mb-3">
+                            <label for="colFormLabel" class="col-sm-2 col-form-label">Asunto:</label>
+                            <div class="col-sm-10">
+                                <input type="text" class="form-control" id="colFormLabel" placeholder="col-form-label">
+                            </div>
+                        </div>
+
+                        <div class="row mb-3">
+                            <label for="colFormLabel" class="col-sm-2 col-form-label">Consulta:</label>
+                            <div class="col-sm-10">
+                                <input type="text" class="form-control" id="colFormLabel" placeholder="col-form-label">
+                            </div>
+                        </div>
                     </form>
                 </section>
+            </div>
+        -->
+            <div class="container-fluid px-1 py-5 mx-auto">
+                <div class="row d-flex justify-content-center">
+                    <div class="col-xl-7 col-lg-8 col-md-9 col-11 text-center">
+                        <div class="card">
+                            <h2 class="text-center mb-4">Envíanos tu consulta</h5>
+                            <form class="form-card" onsubmit="javascript: return validate(0);">
+                                <div class="row justify-content-between text-left">
+                                    <div class="form-group col-sm-6 flex-column d-flex"> <label class="form-control-label px-3">Nombre<span class="text-danger"> *</span></label> <input type="text" id="fnombre" name="fnombre" placeholder="" onblur="validate(1)"> </div>
+                                    <div class="form-group col-sm-6 flex-column d-flex"> <label class="form-control-label px-3">Apellido<span class="text-danger"> </span></label> <input type="text" id="fapellido" name="fapellido" placeholder="" onblur="validate(2)"> </div>
+                                </div>
+                                <div class="row justify-content-between text-left">
+                                    <div class="form-group col-sm-6 flex-column d-flex"> <label class="form-control-label px-3">Email<span class="text-danger"> *</span></label> <input type="text" id="femail" name="femail" placeholder="" onblur="validate(3)"> </div>
+                                    <div class="form-group col-sm-6 flex-column d-flex"> <label class="form-control-label px-3">Tel/Cel<span class="text-danger"></span></label> <input type="text" id="ftel" name="ftel" placeholder="" onblur="validate(4)"> </div>
+                                </div>
+                                <div class="row justify-content-between text-left">
+                                    <div class="form-group col-sm-12 flex-column d-flex"> <label class="form-control-label px-3">Asunto<span class="text-danger"> *</span></label> <input type="text" id="fasunto" name="fasunto" placeholder="" onblur="validate(5)"> </div>
+                                </div>
+                                <div class="row justify-content-between text-left">
+                                    <div class="form-group col-12 flex-column d-flex"> <label class="form-control-label px-3">Consulta/Mensaje<span class="text-danger"> *</span></label> <input type="text" id="fmensaje" name="fmensaje" placeholder="" onblur="validate(6)"> </div>
+                                </div>
+                                <div class="row  justify-content-between">
+                                    <div class="form-group col-sm-12 flex-column d-flex"> <button type="submit" class="btn-block btn-primary btn-strainer ">Enviar consulta</button> </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
             </div>
             <!--<aside></aside>-->
         </main>
