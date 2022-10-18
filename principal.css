@@ -47,70 +47,7 @@
     }
 }
 
-
-/* Chacho */
 .coffee-header1{
-    padding: 10px;
-    background-color: #000000;
     background-size: cover;
     background-image: url(../assets/fotos/frutoCafe.jpeg);
-    /*height: 200px;*/
-    width: calc(100%-10px);
-    overflow: auto;
-    /*opacity: 0.9;*/
-    color: #ffffff;
-}
-
-.transbox1{
-    margin: 0px;
-    /*padding: 0 20px 10px 30px;*/
-    padding: 0;
-    border: 1px solid black;
-    background: rgba(0, 0, 0, 0.3);
-    overflow: auto;
-
-    display: flex;
-    align-items: center;
-    height: 10em;
-}
-.index-logo1{
-    height: 10em;
-    width: 10em;
-    margin-right: 1em;
-}
-.coffee-header1  h1{
-    text-align: justify;
-    font-family: gothammedium;/*gothamblack;/*'gothamblack';*/
-    margin-bottom: 0;
-}
-.coffee-header1  h2{
-    font-family: gothambold;/*gothamblack;/*'gothamblack';*/
-}
-
-@media (max-width: 22em){
-    .index-logo1{
-        display: none;
-    }
-}
-@media (max-width: 622px){
-    .coffee-header1  h1{
-        line-height: 1.2em;
-        font-size: 2.7em;
-    }
-
-    .coffee-header1 h2{
-        display: none;
-    }
-}
-@media ( min-width: 623px) and (max-width: 835px){
-    .coffee-header1  h1{
-        line-height: 7vh;
-        font-size: 6vh;
-    }
-}
-@media (min-width: 836px){
-    .coffee-header1  h1{
-        line-height: 5vh;
-        font-size: 9vh;
-    }
 }

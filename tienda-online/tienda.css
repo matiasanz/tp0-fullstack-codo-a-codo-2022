@@ -98,3 +98,8 @@
     text-overflow: ellipsis;
     max-height: inherit;
 }
+
+.coffee-header1{
+    background-size: contain;
+    background-image: url(../assets/fotos/Foto1.jpeg);
+}

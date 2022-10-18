@@ -82,3 +82,8 @@
         grid-column-end: 1; 
     }
 }
+
+.coffee-header1{
+    background-size: cover;
+    background-image: url(../assets/fotos/granosCafe.jpeg);
+}
