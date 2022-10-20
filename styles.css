@@ -1,29 +1,4 @@
-/*@import url('http://fonts.cdnfonts.com/css/gotham');*/
-
-/*Font Type*/
-@font-face {
-    font-family: 'gothamblack';
-    src: url('fonts/Gotham/gotham-black-webfont.woff2') format('woff2'),
-         url('fonts/Gotham/gotham-black-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'gothammedium';
-    src: url('fonts/Gotham/gothammedium-webfont.woff2') format('woff2'),
-         url('fonts/Gotham/gothammedium-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'gothambold';
-    src: url('fonts/Gotham/gotham-bold-webfont.woff') format('woff2'),
-         url('fonts/Gotham/gotham-black-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-}
+@import url('./assets/fonts/Gotham/index.css');
 
 *{
     font-family: 'Gotham', sans-serif;
@@ -35,7 +10,7 @@ header{
 
 /****************** Barra superior *********************/
     :root{
-        --alturaTopNav:4em;
+        --alturaTopNav: 4em;
         --color-primario: #E99F24;
         --color-secundario: black;
         --color-terciario: #405D51;
