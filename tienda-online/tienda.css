@@ -12,7 +12,7 @@
     Ante cualquier problema relacionado, sacar*/
 }
 
-@media (max-width: 765px){
+@media (max-width: 768px){
     .with-sidebar{
         display: block;
         text-align: center;

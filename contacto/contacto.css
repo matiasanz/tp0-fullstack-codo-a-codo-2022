@@ -64,7 +64,7 @@ span .text-danger{
     border: 0;
 }
 
-@media only screen and (min-width: 765px) {
+@media only screen and (min-width: 768px) {
 
     nav.top-nav .menu-label {
         display: none;

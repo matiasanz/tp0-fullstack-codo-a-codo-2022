@@ -51,7 +51,7 @@
     border-radius: 20px;      
 }
 
-@media (max-width: 765px){
+@media (max-width: 768px){
     .blends-container{
         grid-template-columns: repeat(1,auto);
         row-gap: 20px;
