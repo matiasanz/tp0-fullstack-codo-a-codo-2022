@@ -43,13 +43,12 @@ function validate(val) {
         }
     }
 
-    if(val===2 || val===0){
-        const value = v2.value.trim()
-        flag2 = value.match(/[a-zA-Z]+/)
+    if((val===2 || val===0) && v2.value !== ''){
+        flag2 = v2.value.match(/[a-zA-Z ]*/)
         v2.style.borderColor = flag2? 'green': 'red'
     }
 
-    if(val===4 || val===0){
+    if((val===4 || val===0) && v4.value !== ''){
         const value = +v4.value
         flag4 = typeof value === "number" && Number.isInteger(value) && value>1000000 
         v4.style.borderColor = flag4? 'green': 'red'
