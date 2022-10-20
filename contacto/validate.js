@@ -8,6 +8,9 @@ function ValidateEmail(inputText){
     }
 }
 
+function onlyLetters(inputText){
+    return inputText.match(/^[A-Za-z]+$/)
+}
 /**
  * Permite validar campos de un formulario de forma individual sobre evento onblur de cada elemento, entregando al final estado
  * con respecto a validación global del formulario; en caso de que sea válido, muestra dialogo de confirmación
@@ -33,7 +36,8 @@ function validate(val) {
     flag4= true;
 
     if(val==1 || val==0){
-        if(v1.value.trim() == '') {
+        const name = v1.value.trim()
+        if(name == '' || !onlyLetters(name)) {
             v1.style.borderColor = 'red';
             flag1 = false;
         }
@@ -44,7 +48,7 @@ function validate(val) {
     }
 
     if((val===2 || val===0) && v2.value !== ''){
-        flag2 = v2.value.match(/[a-zA-Z ]*/)
+        flag2 = onlyLetters(v2.value)
         v2.style.borderColor = flag2? 'green': 'red'
     }
 
