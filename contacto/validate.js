@@ -1,5 +1,5 @@
 function ValidateEmail(inputText){
-    var mailformat = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+    var mailformat = /\w@\w+.\w+/;
     if(inputText.value.match(mailformat)){
         return true;
     }
@@ -41,6 +41,18 @@ function validate(val) {
             v1.style.borderColor = 'green';
             flag1 = true;
         }
+    }
+
+    if(val===2 || val===0){
+        const value = v2.value.trim()
+        flag2 = value.match(/[a-zA-Z]+/)
+        v2.style.borderColor = flag2? 'green': 'red'
+    }
+
+    if(val===4 || val===0){
+        const value = +v4.value
+        flag4 = typeof value === "number" && Number.isInteger(value) && value>1000000 
+        v4.style.borderColor = flag4? 'green': 'red'
     }
 
     if(val==5 || val==0){
