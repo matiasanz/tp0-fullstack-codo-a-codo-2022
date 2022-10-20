@@ -11,7 +11,7 @@ import productos from './productos.js'
                 listadoProductos += `
                     <article id="producto${i}" class="producto">
                         <div class="box-img">
-                            <img class="producto--img" src="../assets/productos/${producto.imagen}">
+                            <img class="producto--img" src="../assets/img/productos/${producto.imagen}">
                         </div>
                         <div class="producto--datos">
                             <h3 class="producto--nombre">${producto.nombre}</h3>

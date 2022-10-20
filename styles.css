@@ -46,7 +46,7 @@ header{
         top: 0;    
         z-index: 2;
         height: var(--alturaTopNav);
-        background-image: url("./assets/topnav.jpg");
+        background-image: url("./assets/img/topnav.jpg");
         width: 100%;
         display: flex;
         justify-content: space-around;
@@ -212,7 +212,7 @@ header{
         background: linear-gradient(
             rgba(255,255,255,.5)
             , rgba(255,255,255,.5)
-        ), url('./assets/tramas/trama.png');
+        ), url('./assets/img/tramas/trama.png');
     }
 
 /***************** Varios ***************/
