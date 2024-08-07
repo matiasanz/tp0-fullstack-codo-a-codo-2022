@@ -47,19 +47,19 @@ consideren necesarios agregar a la entrega.
     - paleta de colores seleccionada acorde a la temática;
     - logo utilizado en el sitio web.
 
-## Capturas
- - Inicio
+## :camera: Capturas
+### Inicio
   ![Inicio](/MISC/Inicio--concepto.png)
   ![Inicio 2](/MISC/Inicio--como-preparar.png)
  
- - Orígenes
+### Orígenes
   ![Origenes](/MISC/origenes.png) 
 
- - Tienda Online
+### Tienda Online
   ![Tienda online](/MISC/tienda-online.png) 
 
- - Dónde encontrarnos
+### Dónde encontrarnos
   ![Sucursales](/MISC/sucursales.png) 
 
- - Contacto
+### Contacto
   ![Contacto](/MISC/contacto.png) 
