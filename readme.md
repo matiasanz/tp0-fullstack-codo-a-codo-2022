@@ -46,3 +46,20 @@ consideren necesarios agregar a la entrega.
     - tipografía seleccionada acorde a la temática del proyecto; fotografía de calidad y optimizada para web;
     - paleta de colores seleccionada acorde a la temática;
     - logo utilizado en el sitio web.
+
+## Capturas
+ - Inicio
+  ![Inicio](/MISC/Inicio--concepto.png)
+  ![Inicio 2](/MISC/Inicio--como-preparar.png)
+ 
+ - Orígenes
+  ![Origenes](/MISC/origenes.png) 
+
+ - Tienda Online
+  ![Tienda online](/MISC/tienda-online.png) 
+
+ - Dónde encontrarnos
+  ![Sucursales](/MISC/sucursales.png) 
+
+ - Contacto
+  ![Contacto](/MISC/contacto.png) 
